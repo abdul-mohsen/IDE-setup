@@ -39,3 +39,4 @@ if [ ! -d ~/.config/tmux/plugins/tmux-resurrect/ ]; then
 fi
 git config --global user.email "abdulmohsen.jawad.almajed@gmail.com"
 git config --global user.name "ssda"
+mv .gitconfig ~/
