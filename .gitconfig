@@ -6,7 +6,13 @@
     editor = nvim
 
 [merge]
-    tool = nvim
+	tool = nvimdiff
 
-[mergetool "nvim"]
-    cmd = nvim -f -c 'set diffopt+=internal,filler,context:3' -c 'setlocal buftype=nofile' -c 'setlocal bufhidden=delete' 
+[mergetool]
+	keepBackup = false
+	trustExitCode = false
+	prompt = false
+
+[mergetool "nvimdiff"]
+	cmd = nvim -d \"$LOCAL\" \"$MERGED\" \"$BASE\" \"$REMOTE\" -c \"wincmd w\" -c \"wincmd J\"
+
