@@ -7,6 +7,10 @@
 
 [merge]
 	tool = nvimdiff
+[push]
+	autoSetupRemote = true
+[pull]
+	autoSetupRemote = true
 
 [mergetool]
 	keepBackup = false
